@@ -9,7 +9,7 @@ YELLOW = \033[33m
 BLUE = \033[38;2;15;101;214m
 RESET = \033[0m
 
-SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp  WrongCat.cpp WrongDog.cpp WrongAnimal.cpp Brain.cpp
+SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp  WrongCat.cpp WrongAnimal.cpp Brain.cpp
 
 OBJS_SRC = $(SRC:.cpp=.o)
 

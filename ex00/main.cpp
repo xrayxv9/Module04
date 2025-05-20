@@ -38,5 +38,15 @@ int main()
 	delete wrong_cat;
 	delete wrong_dog;
 
+
+	const Animal *coucou = new Cat();
+	const Cat *coucou2 = new Cat();
+
+	std::cout << "Hihi" << std::endl;
+	coucou->makeSound();
+	std::cout << "Hihi" << std::endl;
+	coucou2->makeSound();
+	std::cout << "Hihi" << std::endl;
+
 	return 0;
 }
