@@ -3,21 +3,20 @@
 #include <Dog.hpp>
 #include <Cat.hpp>
 #include <WrongAnimal.hpp>
-#include <WrongDog.hpp>
 #include <WrongCat.hpp>
 
 int main()
 {
-	const Animal *mix[100];
+	const Animal *mix[20];
 
 	std::cout << "\033[1;34mCREATION\033[1;0m" << std::endl << std::endl << std::endl;
-	for (int i = 0; i < 50; i++)
+	for (int i = 0; i < 10; i++)
 		mix[i] = new Dog();
-	for (int i = 50; i < 100; i++)
+	for (int i = 10; i < 20; i++)
 		mix[i] = new Cat();
 
 	std::cout << "\033[1;34mTESTING REMOVALS\033[1;0m" << std::endl << std::endl << std::endl;
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 20; i++)
 		delete mix[i];
 	std::cout << "\033[1;34mIMPLEMENTING IDEAS\033[1;0m" << std::endl << std::endl << std::endl;
 	
